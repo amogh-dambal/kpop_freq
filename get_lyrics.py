@@ -1,9 +1,11 @@
 from bs4 import BeautifulSoup
 from glob import iglob
-import string, os
+import string
+import os
 
 
 from html_manager import fetch
+
 
 def get_songs(filename):
 	artists = []
@@ -70,7 +72,11 @@ def generate_corpus():
 	files = [f for f in iglob('**/*', recursive=True) if os.path.isfile(f)]
 	lyric_files = [f for f in files if f.endswith('lyrics.txt')]
 
+	corpus_file = 'data/korpus.txt'
+
 	with open('data/korpus.txt', 'wb') as outfile:
 		for file in lyric_files:
 			with open(file, 'rb') as infile:
 				outfile.write(infile.read())
+
+	return corpus_file

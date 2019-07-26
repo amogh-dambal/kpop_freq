@@ -8,8 +8,8 @@ import matplotlib.pyplot as plt
 from preprocessing import remove_english, remove_extraneous, remove_stopwords
 
 
-def tokenize_corpus(corpus):
-	raw_document_ko = read_txt('data/korpus.txt')
+def tokenize_corpus(corpus_file):
+	raw_document_ko = read_txt(corpus_file)
 	lines = raw_document_ko.split('\n')
 
 	processed_doc_ko = remove_stopwords(remove_extraneous(remove_english(remove_extraneous(lines))))
