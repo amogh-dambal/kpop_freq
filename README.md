@@ -20,7 +20,7 @@ The later versions of this project aim to implement more features of NLP analysi
 We hope to understand the patterns and structures of music that tends to be popular to identify the particular features of any given track that are the cause of its popularity. This project could serve as a guide to differentiate songs based on popularity.
 
 # Contact
-All questions, suggestions, code reviews, and feature suggestions are welcome! Please contact me at the following email: amdam2013@gmail.com. 
+All questions, suggestions, code reviews, and feature suggestions are welcome! Please contact me at the following email: amoghdambal@utexas.edu 
 
 # Disclaimer
 
